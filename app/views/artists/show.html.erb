@@ -1,3 +1,26 @@
-<h1>SHOW </h1>
-<%= @artist.name %>
-<%= @artist.id %>
+<div class="row">
+  <div class="col-md-7">
+    <h2><%= @artist.name %></h2>
+    <h3>Albums (<%= @artist.albums.size %>)</h3>
+    <div class="row">
+      <% @artist.albums.order('released_at desc').each do |album| %>
+        <div class="col-md-3">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <%= image_tag album.image_url, width:"100%" %>
+              <h4><%= album.name %></h4>
+              <h4><%= album.released_at %></h4>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="col-md-4 col-md-offset-1">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag @artist.image_url, width:"100%" %>
+      </div>
+    </div>
+  </div>
+</div>
