@@ -1,0 +1,89 @@
+<div class="row text-center">
+  <% @artists.each do |artist| %>
+    <div class="col-sm-6 col-md-3">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <%= image_tag artist.image_url, width:"100%", height:"180" %>
+          <h3><%= artist.name %></h3>
+          <%= link_to "Ver más", artist_path(artist), class:"btn btn-primary btn-block" %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
+
+
+
+
+
+<!-- <div class="row text-center">
+  <div class="col-sm-6 col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag "Blink182.jpg", width:"100%", height:"180" %>
+        <h3>Blink 182</h3>
+        <button class="btn btn-primary btn-block">Ver más</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag "Bulletformyvalentine.jpg", width:"100%", height:"180" %>
+        <h3>Bullet For My Valentine</h3>
+        <button class="btn btn-primary btn-block">Ver más</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag "Bon Jovi.jpg", width:"100%", height:"180" %>
+        <h3>Bon Jovi</h3>
+        <button class="btn btn-primary btn-block">Ver más</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag "Metallica.jpg", width:"100%", height:"180" %>
+        <h3>Metallica</h3>
+        <button class="btn btn-primary btn-block">Ver más</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row text-center">
+  <div class="col-sm-6 col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag "Nirvana.jpg", width:"100%", height:"180" %>
+        <h3>Nirvana</h3>
+        <button class="btn btn-primary btn-block">Ver más</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag "Gunsandroses.jpg", width:"100%", height:"180" %>
+        <h3>Guns And Roses</h3>
+        <button class="btn btn-primary btn-block">Ver más</button>
+      </div>
+    </div>
+  </div>
+  <div class="col-sm-6 col-md-3">
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <%= image_tag "Papa Roach.jpg", width:"100%", height:"180" %>
+        <h3>Papa Roach</h3>
+        <button class="btn btn-primary btn-block">Ver más</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+ -->
